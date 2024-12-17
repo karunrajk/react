@@ -18,7 +18,7 @@ a{
 }
 
 .Hero{
-    background: url('../images//wallpaper3.jpg');
+    background: url('../images//wallpaper2.jpg');
     height: 920px;
     background-size: cover;
     background-position: center;
@@ -54,4 +54,27 @@ a{
     padding: 12px 20px;
     border: 1px  solid rgba(255, 255, 255, .5);
     border-radius:  20px;
+}
+
+@media (max-width:640px){
+
+    .HeroGroup {
+        padding: 100px 200px;
+    }
+    
+    .Hero h1{
+        font-size: 40px;
+    }
+    .Hero a {
+        font-size: 12px;
+        /* padding: 0%; */
+        padding: 4px 8px;
+        /* width: 500px;
+        max-width: 200px; */
+    }
+
+    .Hero p{
+        font-size: 20px;
+    }
+
 }
