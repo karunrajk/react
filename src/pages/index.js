@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Card from '../components/Card';
 
 const IndexPage = () => (
   <div>
@@ -25,6 +26,47 @@ const IndexPage = () => (
       </svg>
 
       </div>
+    </div>
+    <div className='Cards'>
+      <h2>11 new courses hahaha</h2>
+      <div className='CardGroup'>
+          <Card 
+          title= "Wooahh...."
+          text= "Hmmm random text here"
+          image = {require('../images/wallpaper.jpg')}/>
+          <Card 
+          title= "Barcelona"
+          text= "Champions of World"
+          image = {require('../images/wallpaper2.jpg')}/>
+          <Card 
+          title= "React course"
+          text= "Very random"
+          image = {require('../images/wallpaper3.jpg')}/>
+          <Card 
+          title= "Rescript course."
+          text= "Fischer random"
+          image = {require('../images/wallpaper4.jpg')}/>
+          <Card 
+          title= "Delete this course"
+          text= "what is the point?"
+          image = {require('../images/wallpaper3.jpg')}/>
+          <Card 
+          title= "Random course"
+          text= "no wayyy"
+          image = {require('../images/wallpaper2.jpg')}/>
+          <Card 
+          title= "Test Course"
+          text= "Exit here"
+          image = {require('../images/wallpaper.jpg')}/>
+          <Card 
+          title= "Course course"
+          text= "Enter here"
+          image = {require('../images/wallpaper3.jpg')}/>
+          <Card 
+          title= "Testing."
+          text= "Htesing"
+          image = {require('../images/wallpaper2.jpg')}/>
+       </div>
     </div>
   </div>
 )

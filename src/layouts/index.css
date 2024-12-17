@@ -89,6 +89,39 @@ a{
     justify-items: center;
 
 }
+
+.CardGroup{
+    display: grid;
+    margin: 50px 40px 100px;
+    justify-items: center;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 40px;
+}
+
+.Cards h2 {
+    margin: 60px 20px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(104deg, #050A27 0%,#4A548C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@media (max-width:1060px){
+    .CardGroup{
+        grid-template-columns: repeat(2,auto);
+}
+
+}
+
+@media (max-width:640px){
+    .CardGroup{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 @media (max-width:640px){
 
     .HeroGroup {
