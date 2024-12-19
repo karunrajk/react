@@ -16,6 +16,10 @@ const SectionLogo = styled.img`
     align-self: end
     width: 128px;
     margin: 0 auto;
+
+    @media (max-width: 720px){
+        transform: scale(80%);
+    }
 `
 
 const SectionTitleGroup = styled.div`
@@ -58,19 +62,21 @@ const WaveBottom = styled.div`
     ${'' /* self-align: bottom; */}
     width: 100%;
     ${'' /* height: 100%; */}
-    bottom: -80px;
+    bottom: -8px;
 `
 const WaveTop = styled.div`
     position: absolute;
-    top: -80px;
+    width: 100%;
+    top: -8px;
     transform: rotate(180deg);
 `
 
 const Section = props => (
         
         <SectionGroup image={props.image}>
-            <WaveTop> <Wave /> </WaveTop>
+            {/* <WaveTop> <Wave /> </WaveTop> */}
             <WaveBottom> <Wave /> </WaveBottom>
+            <WaveTop> <Wave /> </WaveTop>
             <SectionLogo src={props.logo}></SectionLogo>
             <SectionTitleGroup>
                     <SectionTitle> {props.title}</SectionTitle>

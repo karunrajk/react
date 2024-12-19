@@ -27,7 +27,7 @@
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(5,auto);
-    align-items: center;
+    align-items: top;
     justify-items: center;
     /* grid-template-columns: auto auto auto auto auto; */
 }
@@ -39,6 +39,8 @@
     width: 500px; */
     color: white;
     font-weight: 700;
+    font-size: 24px;
+    self-align: center;
 }
 
 .Header button{

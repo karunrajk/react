@@ -5,7 +5,35 @@ import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
+import staticdata from '../../staticdata.json'
+import Cell from '../components/Cell';
+// import Cell from '../components/Cell'
+import styled from 'styled-components';
 
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #94A4BA;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px ){
+
+    grid-template-colums: repeat(1,1fr);
+
+  }
+
+`
 
 const IndexPage = () => (
   <div>
@@ -81,6 +109,20 @@ const IndexPage = () => (
         text={"Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." }
         />
     </div>
+    {/* <Cell 
+        title = {"title"}
+        image = {require('../images/wallpaper3.jpg')} /> */}
+
+      <SectionCaption> "12 Sections- or is it really 12???"</SectionCaption>
+      <SectionCellGroup> 
+          {staticdata.cells.map(cell =>(
+          
+          <Cell 
+            title = {cell.title}
+            image = {cell.image} />
+
+          ))}      
+      </SectionCellGroup>
   </div>
 )
 
